@@ -1,0 +1,35 @@
+body {
+    background-image: url('Fundal1.jpg');
+    background-size: cover; /* Acoperă întreaga pagină */
+    background-repeat: no-repeat; /* Evită repetarea imaginii */
+    background-position: center center; /* Centrează imaginea */
+    background-attachment: fixed; /* Imaginea rămâne fixă când faci scroll */
+    font-family: 'Arial', sans-serif;
+    color: #1a047a;
+    font-size: 30px;
+    background-color: yellow;
+    color: rgb(23, 230, 23);
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin: 0;
+    
+    text-align: center;
+    
+}
+.highlight {
+    background-color: #7c5382;
+}
+button {
+    padding: 10px 20px;
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #8b4513;
+}

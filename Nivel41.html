@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Fake Story</title>
+    <link rel="stylesheet" href="Nivel4.css">
+</head>
+<body>
+    <div id="timer"></div>
+    <h1>Nirwana 4: Finden Sie die Fake-Story</h1>
+    <p>Klicken Sie auf jede Zeitung, um die ganze Geschichte zu lesen und zu entscheiden, ob es sich bei der Geschichte um Fake News handelt oder nicht:</p>
+
+    <div class="news-container">
+        <div class="news-card">
+            <img src="news1.png"/300x150 alt="News 1">
+            <h3>Paluten verlässt YouTube 
+                Schwerer Skandal erschüttert die Community!</h3>
+            <p>
+                In einem überraschenden und bisher unbestätigten Bericht wird behauptet, dass der beliebte YouTuber Paluten seinen Kanal aufgrund eines schweren Skandals geschlossen hat. Gerüchten zufolge soll der Content Creator in illegale Aktivitäten verwickelt gewesen sein, die nun ans Licht gekommen sind. Diese Anschuldigungen haben in der Online-Community für erhebliches Aufsehen gesorgt.
+                Laut den unbestätigten Berichten plant Paluten angeblich, all seine Videos von der Plattform zu löschen und sich vollständig aus der Öffentlichkeit zurückzuziehen. Bislang gibt es jedoch keine offizielle Stellungnahme von Paluten selbst, und die genauen Umstände bleiben unklar. Die Fans des YouTubers sind schockiert und warten gespannt auf weitere Entwicklungen.</p>
+
+            <div class="buttons">
+                
+                <button class="extra-button" onclick="checkAnswer(false)">News 1</button>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="news2.jpg"/300x150 alt="News 2">
+            <h3>Paluten schockiert Fans
+                Berühmter YouTuber tritt extremer politischer Gruppierung bei</h3>
+            <p>In einer besorgniserregenden Entwicklung wird behauptet, dass der populäre YouTuber Paluten sich einer extremen politischen Partei angeschlossen habe. Laut den Berichten nutzt er seine weitreichende Plattform, um die Ideologie dieser Gruppierung aktiv zu verbreiten.
+                Die Anschuldigungen werden durch angebliche Beweise gestützt, darunter Screenshots von Palutens Social-Media-Konten, die Posts zeigen, in denen er scheinbar die Ansichten der Partei teilt und unterstützt. Diese Enthüllungen haben viele Fans und Follower des YouTubers schockiert, da Paluten bisher eher durch seine humorvollen und unterhaltsamen Inhalte bekannt war.
+                </p>
+            <div class="buttons">
+                <button class="extra-button" onclick="checkAnswer(false)">News 2</button>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="news3.jpg"/300x150 alt="News 3">
+            <h3>Youtube Star spricht offen über Burnout
+                Paluten hat grossen Druck durch ständigen Content-Creation-Zyklus
+                </h3>
+            <p>In einem emotionalen Video sprach Paluten offen darüber, wie schwierig es ist, den Erwartungen seiner Millionen von Fans gerecht zu werden und dabei konstant neue Inhalte zu liefern. Der YouTuber gab zu, dass er über einen längeren Zeitraum unter Burnout litt und ernsthaft überlegte, mit YouTube aufzuhören. Er betonte, dass er nun aktiv daran arbeitet, ein besseres Gleichgewicht zwischen seiner Arbeit und seinem Privatleben zu finden.</p>
+            <div class="buttons">
+                <button class="extra-button" onclick="checkAnswer(true)">News 3</button>
+            </div>
+        </div>
+    </div>
+    <div class="question-container">
+        <p>Wie viele Fragen haben Sie richtig beantwortet??</p>
+        <input type="number" id="answers" placeholder="Geben Sie die Nummer ein" min="0" max="3">
+        <br>
+        <button onclick="checkAnswers(3,'Nivel5.html','Nivel4Down.png')">Überprüfen</button>
+        
+    </div>
+
+    <div id="message"></div>
+    <script src="script.js"></script>
+      
+    
+   
+</body>
+</html>

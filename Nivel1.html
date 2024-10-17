@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeta Desertului - Salvează-l pe Spike</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+     <div id="timer"></div>
+    <div class="container">
+        <h1>Virtuelle Nirvana 1 </h1>
+        
+        <div class="spike-container">
+            <img src="spike.png" alt="Spike" class="spike-image">
+        </div>
+        <p>Bist du Brawlstars Profi, dann stelle dein Wissen unter Beweis und befreie Spike:
+            Klicke auf den Link oder scanne den QR Code mit deinem Handy!
+            </p>
+
+            <div class="link-container">
+                <p> </p>
+                <a href="https://h5p.zebis.digital/h5p/14034/embed" target="_blank">Klicke auf den Link!</a>
+            </div>
+    
+            <!-- Cod QR -->
+            <div class="qr-container">
+                <p>Scanne den QR </p>
+                <img src="CodQREx1.png" alt="Cod QR" class="qr-code">
+            </div>
+            <div class="question-container">
+                <p>Wie viele Fragen haben Sie richtig beantwortet??</p>
+                <input type="number" id="answers" placeholder="Geben Sie die Nummer ein" min="0" max="5">
+                <br>
+                <button onclick="checkAnswers(5,'Nivel2.html','spike.png')">Überprüfen</button>
+                
+            </div>
+    
+        
+    </div>
+    <div class="message" id="message"></div>
+    <script src="script.js"></script>
+</body>
+</html>
