@@ -74,13 +74,22 @@ window.onload = function () {
     // Pornește timer-ul folosind timpul rămas din sessionStorage sau timpul inițial
     startTimer(timeInSeconds, timerDisplay);
 };
-function checkAnswer(isCorrect) {
+function checkAnswer(isCorrect,nextpage,pagedown) {
     const message = document.getElementById('message');
     if (isCorrect) {
-        message.textContent = "Richtig! Gut gemacht.";
-        message.style.color = "green";
+        setTimeout(function() {
+            message.textContent = "Richtig! Gut gemacht.";
+            message.style.color = "green";
+           
+        }, 10000);
+        
+        window.open(pagedown, '_blank');
+        saveScore(10);
+        window.location.href = nextpage;
+        
     } else {
         message.textContent = "Hoppla! Das war die falsche Antwort.";
         message.style.color = "red";
     }
 }
+
